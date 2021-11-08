@@ -19,7 +19,4 @@ public class Client {
        gardenCreator.creatTree();
     }
 
-//    public static void main(String[] args) {
-//
-//    }
 }

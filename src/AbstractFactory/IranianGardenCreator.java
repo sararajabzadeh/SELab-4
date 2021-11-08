@@ -1,26 +1,33 @@
 package AbstractFactory;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class IranianGardenCreator extends GardenCreator {
-    private Tree[] trees;
-    private Flower[] flowers;
+    private List<Tree> trees  = new ArrayList<>();
+    private List<Flower> flowers = new ArrayList<>();
 
     @Override
     Tree creatTree() {
-        return null;
+        Tree newTree = new IranianTree();
+        trees.add(newTree);
+        return newTree;
     }
 
     @Override
     Flower creatFlower() {
-        return null;
+        Flower newFlower = new IranianFlower();
+        flowers.add(newFlower);
+        return newFlower;
     }
 
     @Override
-    Tree[] getTrees() {
+    List<Tree> getTrees() {
         return this.trees;
     }
 
     @Override
-    Flower[] getFlowers() {
+    List<Flower> getFlowers() {
         return this.flowers;
     }
 }

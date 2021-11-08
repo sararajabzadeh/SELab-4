@@ -1,8 +1,10 @@
 package AbstractFactory;
 
+import java.util.List;
+
 public abstract class GardenCreator {
     abstract Tree creatTree();
     abstract Flower creatFlower();
-    abstract Tree[] getTrees();
-    abstract Flower[] getFlowers();
+    abstract List<Tree> getTrees();
+    abstract List<Flower> getFlowers();
 }
