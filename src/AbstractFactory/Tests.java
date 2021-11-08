@@ -1,12 +1,19 @@
 package AbstractFactory;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class Tests {
-    Client client = new Client();
+    @Test
+    public void testClientIran() {
+        GardenCreator gardenCreator = Client.makeCreator("Iranian");
+        assertTrue(gardenCreator.creatFlower() instanceof IranianFlower);
+        assertTrue(gardenCreator.creatTree() instanceof IranianTree);
+    }
 
     @Test
-    public void testClient() {
-
+    public void testClientJapan() {
+        GardenCreator gardenCreator = Client.makeCreator("Japanese");
+        assertTrue(gardenCreator.creatFlower() instanceof JapaneseFlower);
+        assertTrue(gardenCreator.creatTree() instanceof JapaneseTree);
     }
 }
