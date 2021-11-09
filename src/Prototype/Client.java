@@ -1,7 +1,7 @@
 package Prototype;
 
 public class Client {
-    public static void Operataion() {
-        return new Prototype;
+    public void Operataion(Prototype obj) {
+        return new obj.clone();
     }
     }
