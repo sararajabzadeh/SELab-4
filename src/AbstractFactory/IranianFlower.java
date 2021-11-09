@@ -1,6 +1,6 @@
 package AbstractFactory;
 
-public class IranianFlower implements Flower {
+public class IranianFlower extends Flower {
     private String name;
 
     public String getName() {

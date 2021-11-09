@@ -1,6 +1,6 @@
 package AbstractFactory;
 
-public class IranianTree implements Tree {
+public class IranianTree extends Tree {
     private String name;
     private String fruit;
 

@@ -1,6 +1,6 @@
 package AbstractFactory;
 
-public class JapaneseTree implements Tree{
+public class JapaneseTree extends Tree{
     private String name;
     private String fruit;
 
