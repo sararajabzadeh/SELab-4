@@ -10,6 +10,7 @@ public class JapaneseGardenCreator extends GardenCreator {
     @Override
     Tree creatTree() {
         Tree newTree = new JapaneseTree();
+        System.out.println("One Japanese Tree Created.");
         trees.add(newTree);
         return newTree;
     }
@@ -17,6 +18,7 @@ public class JapaneseGardenCreator extends GardenCreator {
     @Override
     Flower creatFlower() {
         Flower newFlower = new JapaneseFlower();
+        System.out.println("One Japanese Flower Created.");
         flowers.add(newFlower);
         return newFlower;
     }
