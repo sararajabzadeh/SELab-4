@@ -1,8 +1,12 @@
 package Prototype;
 
-public abstract class ConcretePrototype2 implements Prototype{
+public class ConcretePrototype2 extends Prototype{
 
-    public Prototype Clone(){
-        return this.Clone;
+    public ConcretePrototype2(int serialNumber, String name) {
+        super(serialNumber, name);
+    }
+
+    public Prototype prototypeClone() throws CloneNotSupportedException {
+        return (ConcretePrototype2)this.clone();
     }
 }

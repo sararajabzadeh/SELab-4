@@ -1,7 +1,7 @@
 package Prototype;
 
 public class Client {
-    public void Operataion(Prototype obj) {
-        return new obj.Clone();
+    public Prototype operataion(Prototype obj) throws CloneNotSupportedException {
+        return obj.prototypeClone();
     }
-    }
+}
