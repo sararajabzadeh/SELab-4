@@ -15,8 +15,10 @@ public class Client {
 
     public void creatGarden(String type){
        GardenCreator gardenCreator = makeCreator(type);
+       System.out.println(type + " Garden Created.");
        gardenCreator.creatFlower();
        gardenCreator.creatTree();
+        System.out.println();
     }
 
 }

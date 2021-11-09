@@ -10,6 +10,7 @@ public class IranianGardenCreator extends GardenCreator {
     @Override
     Tree creatTree() {
         Tree newTree = new IranianTree();
+        System.out.println("One Iranian Tree Created.");
         trees.add(newTree);
         return newTree;
     }
@@ -17,6 +18,7 @@ public class IranianGardenCreator extends GardenCreator {
     @Override
     Flower creatFlower() {
         Flower newFlower = new IranianFlower();
+        System.out.println("One Iranian Flower Created.");
         flowers.add(newFlower);
         return newFlower;
     }

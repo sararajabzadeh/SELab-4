@@ -1,4 +1,6 @@
 package AbstractFactory;
 
-public interface Flower {
+public abstract class Flower {
+    abstract String getName();
+    abstract void setName(String name);
 }
