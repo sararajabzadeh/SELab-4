@@ -1,7 +1,8 @@
 package Prototype;
 
-public class ConcretePrototype11 implements Prototype{
+public abstract class ConcretePrototype11 implements Prototype{
+
     public Prototype Clone(){
-        return this.clone();
+        return this.Clone;
     }
 }
